@@ -5,6 +5,7 @@ body{
     width: 100vw;
     background-color: var(--very-dark-blue);
     margin-top: 10vh;
+    margin-bottom: 10vh;
     
 }
 
