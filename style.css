@@ -1,0 +1,132 @@
+@import './root.css';
+body{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    background-color: var(--very-dark-blue);
+    margin-top: 10vh;
+    
+}
+
+.container{
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    max-width: 375px;
+    height: auto;
+}
+picture{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.main-image{
+    width: 100%;
+}
+
+.main-image img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+
+
+picture .main-image{
+    position: relative;
+}
+picture .main-image div{
+    position: absolute;
+    border-radius: 0.5rem;
+    background-color: var(--cyan);
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    background-color: hsl(178, 100%, 50%, 60%);
+    opacity: 0;
+}
+picture .main-image div:hover{
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+picture .main-image div img{
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+h1{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: var(--white);
+}
+.first p{
+    font-weight: 300;
+    color: var(--soft-blue);
+    
+}
+h1,.first p{
+    text-align: start;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--blue) 
+}
+.info:first-child .icon {
+    width: 16px;
+    height: 27px;
+}
+.info:last-child .icon{
+    width: 16px;
+    height: 16px;
+}
+.info span:first-child{
+    color: var(--cyan);
+    font-weight: 600;
+}
+.info span:last-child{
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+.last{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 1rem 0;
+    align-items: center;
+    width: 100% ;
+}
+.last img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px var(--white);
+    margin-right: 15px;
+}
+.last p{
+    color: var(--soft-blue);
+    font-size: 0.8rem;
+}
+.last p span {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+.last p span:hover, h1:hover{
+    color: var(--cyan);
+    cursor: pointer;
+}
+
